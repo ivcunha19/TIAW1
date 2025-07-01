@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #004679;
+    padding: 15px;
+}
+
+#logo {
+    background-color: #004679;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+#logo img {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+}
+
+#dados {
+    padding: 20px;
+}
+
+.basico {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.info-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.basico h1 {
+    color: #004679;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.basico p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.fotoPerfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #004679;
+    margin-left: 20px;
+}
+
+.informacoes, .servicos, .certificacoes, .portfolio, .avaliacoes, .video-introducao, .preferencias, .historico, .agendamentos {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+h2, h3 {
+    color: #004679;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.informacoes span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.informacoes a {
+    display: inline-block;
+    background: #004679;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.informacoes a:hover {
+    background: #0056a3;
+}
+
+.servicos ul {
+    list-style: none;
+}
+
+.servicos li {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 4px solid #004679;
+    font-size: 1em;
+}
+
+.certificacoes ul {
+    list-style: none;
+}
+
+.certificacoes li {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #28a745;
+}
+
+.projeto-portfolio {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.imagens-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.imagens-projeto img {
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.avaliacoes a {
+    display: inline-block;
+    background: #004679;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.agendamentos a {
+    display: inline-block;
+    background: #004679;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.avaliacoes a:hover {
+    background: #0056a3;
+}
+
+.avaliacao-item {
+    background: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 3px solid gold;
+}
+
+.avaliacao-item p:last-child {
+    color: #666;
+    font-style: italic;
+}
+
+.historico-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 4px solid #004679;
+    font-size: 1em;
+}
+
+.profissional-nao-encontrado {
+    text-align: center;
+    padding: 40px;
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #dados {
+        padding: 15px;
+    }
+    
+    .basico {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fotoPerfil {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .basico h1 {
+        font-size: 1.7em;
+    }
+    
+    #logo img {
+        width: 30%;
+    }
+    
+    .imagens-projeto img {
+        max-width: 100%;
+        height: auto;
+    }
+}

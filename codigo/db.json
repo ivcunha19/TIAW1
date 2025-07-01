@@ -1,0 +1,458 @@
+{
+  "usuarios": [
+    {
+      "tipo": "freelancer",
+      "id": "freelancer_001",
+      "senha": "123",
+      "perfil": {
+        "nome": "Mariana Silva",
+        "data_nascimento": "1992-08-15",
+        "cpf": "123.456.789-00",
+        "email": "mariana.silva@email.com",
+        "telefone": "+55 11 91234-5678",
+        "endereco": {
+          "cidade": "São Paulo",
+          "estado": "SP",
+          "pais": "Brasil"
+        },
+        "foto_perfil_url": "https://exemplo.com/fotos/mariana.jpg",
+        "servicos_oferecidos": [
+          {
+            "id_servico": 1,
+            "nome_servico": "Desenvolvimento Front-End",
+            "descricao": "Criação de interfaces responsivas usando HTML, CSS e JavaScript.",
+            "categoria": "Desenvolvimento",
+            "preco_por_hora": 80,
+            "preco_por_projeto": 1500,
+            "localizacao": "São Paulo - SP",
+            "contato": "mariana.silva@email.com"
+          },
+          {
+            "id_servico": 2,
+            "nome_servico": "Landing Page Profissional",
+            "descricao": "Página única com foco em conversão para campanhas de marketing.",
+            "categoria": "Desenvolvimento",
+            "preco_por_projeto": 600,
+            "localizacao": "São Paulo - SP",
+            "contato": "mariana.silva@email.com"
+          }
+        ],
+        "portfolio": [
+          {
+            "id_projeto": 1,
+            "descricao_projeto": "Site institucional para empresa de tecnologia",
+            "imagens_projeto": [
+              "https://exemplo.com/projetos/site1-1.png",
+              "https://exemplo.com/projetos/site1-2.png"
+            ]
+          }
+        ],
+        "certificacoes": [
+          {
+            "id_certificacao": 1,
+            "nome_certificacao": "Vue.js Avançado",
+            "instituicao": "Alura",
+            "data_obtencao": "2023-11-20"
+          }
+        ],
+        "url_video_introducao": "https://youtube.com/watch?v=exemplo",
+        "avaliacoes_recebidas": [
+          {
+            "tipo_usuario": "freelancer",
+            "nome_usuario": "Carlos Eduardo Rocha",
+            "comentario": "Trabalho impecável e dentro do prazo!",
+            "data": "2025-06-24 14:25:00",
+            "pontualidade": 5,
+            "qualidade": 5,
+            "comunicacao": 5
+          },
+          {
+            "tipo_usuario": "freelancer",
+            "nome_usuario": "Freelancer Anônimo",
+            "comentario": "Otimo trabalho",
+            "data": "25/06/2025, 16:03:18",
+            "pontualidade": 5,
+            "qualidade": 5,
+            "comunicacao": 4
+          }
+        ],
+        "disponibilidade": {
+          "dias": [
+            "Segunda-feira",
+            "Terça-feira",
+            "Quinta-feira"
+          ],
+          "horarios": [
+            "9h-17h",
+            "19h-21h"
+          ]
+        },
+        "uploads_portfolio": [
+          {
+            "tipo_arquivo": "imagem",
+            "url_arquivo": "https://exemplo.com/uploads/design.png"
+          },
+          {
+            "tipo_arquivo": "video",
+            "url_arquivo": "https://exemplo.com/uploads/apresentacao.mp4"
+          }
+        ],
+        "conta_bancaria": {
+          "banco": "Nubank",
+          "agencia": "0001",
+          "conta": "123456-7",
+          "tipo": "Pessoa Física",
+          "pix": "mariana.silva@email.com"
+        },
+        "documentos_verificados": true,
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-18T14:00:00Z"
+      }
+    },
+    {
+      "tipo": "cliente",
+      "id": "cliente_001",
+      "senha": "123",
+      "perfil": {
+        "nome": "João da Silva",
+        "data_nascimento": "1985-03-22",
+        "cpf": "987.654.321-00",
+        "email": "joao.silva@email.com",
+        "telefone": "+55 31 99888-1122",
+        "endereco": {
+          "rua": "Rua das Flores, 123",
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "cep": "30100-000"
+        },
+        "preferencias_servico": [
+          "Eletricista",
+          "Encanador",
+          "Montador de Móveis"
+        ],
+        "metodo_pagamento": {
+          "numero_cartao": "1234 5678 9012 3456",
+          "validade": "12/27",
+          "cvv": "123"
+        },
+        "historico_contratos": [
+          {
+            "id_contrato": 1,
+            "servico": "Instalação de tomadas",
+            "nome_freelancer": "Carlos Ferreira",
+            "data": "2025-03-10",
+            "avaliacao": {
+              "nota": 5,
+              "comentario": "Serviço excelente e rápido!"
+            }
+          }
+        ],
+        "avaliacoes_realizadas": [
+          {
+            "id_avaliacao": 1,
+            "tipo_usuario": "cliente",
+            "nome_usuario": "Carlos Ferreira",
+            "nota": 5,
+            "comentario": "Cliente educado e tranquilo"
+          },
+          {
+            "tipo_usuario": "freelancer",
+            "nome_usuario": "Usuário Avaliador",
+            "nota": 5,
+            "comentario": "Muito receptivo.",
+            "data": "2025-06-25T19:05:04.582Z"
+          }
+        ],
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-18T15:30:00Z",
+        "propostas_servico": [
+          {
+            "id": 1751293072711,
+            "servico": "Confecção de móvel",
+            "local": "São paulo-Sp",
+            "pagamento": "123",
+            "data": "2025-06-23",
+            "descricao": "Preciso de uma mesa",
+            "categoria": "a"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "freelancer",
+      "id": "freelancer_002",
+      "senha": "123",
+      "perfil": {
+        "nome": "Carlos Ferreira",
+        "data_nascimento": "1990-04-10",
+        "cpf": "321.654.987-00",
+        "email": "carlos.ferreira@email.com",
+        "telefone": "+55 21 98877-6655",
+        "endereco": {
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ",
+          "pais": "Brasil"
+        },
+        "foto_perfil_url": "https://exemplo.com/fotos/carlos.jpg",
+        "servicos_oferecidos": [
+          {
+            "id_servico": 3,
+            "nome_servico": "Instalação Elétrica Residencial",
+            "descricao": "Realizo instalação e manutenção elétrica completa em residências.",
+            "categoria": "Eletricista",
+            "preco_por_hora": 70,
+            "preco_por_projeto": 800,
+            "localizacao": "Rio de Janeiro - RJ",
+            "contato": "carlos.ferreira@email.com"
+          }
+        ],
+        "avaliacoes_recebidas": [
+          {
+            "tipo_usuario": "cliente",
+            "nome_usuario": "João da Silva",
+            "comentario": "Serviço excelente e rápido!",
+            "data": "2025-03-10",
+            "pontualidade": 5,
+            "qualidade": 5,
+            "comunicacao": 4
+          }
+        ],
+        "disponibilidade": {
+          "dias": [
+            "Segunda-feira",
+            "Quarta-feira",
+            "Sábado"
+          ],
+          "horarios": [
+            "8h-12h",
+            "14h-18h"
+          ]
+        },
+        "documentos_verificados": true,
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-20T13:00:00Z"
+      }
+    },
+    {
+      "tipo": "freelancer",
+      "id": "freelancer_003",
+      "senha": "123",
+      "perfil": {
+        "nome": "Ana Beatriz Costa",
+        "data_nascimento": "1995-01-30",
+        "cpf": "222.333.444-55",
+        "email": "ana.beatriz@email.com",
+        "telefone": "+55 71 99999-8888",
+        "endereco": {
+          "cidade": "Salvador",
+          "estado": "BA",
+          "pais": "Brasil"
+        },
+        "foto_perfil_url": "https://exemplo.com/fotos/ana.jpg",
+        "servicos_oferecidos": [
+          {
+            "id_servico": 4,
+            "nome_servico": "Serviço de Encanamento",
+            "descricao": "Conserto de vazamentos, troca de registros e instalação de torneiras.",
+            "categoria": "Encanador",
+            "preco_por_hora": 60,
+            "preco_por_projeto": 500,
+            "localizacao": "Salvador - BA",
+            "contato": "ana.beatriz@email.com"
+          }
+        ],
+        "avaliacoes_recebidas": [
+          {
+            "tipo_usuario": "cliente",
+            "nome_usuario": "Julia Mendes",
+            "comentario": "Rápida e muito organizada!",
+            "data": "2025-06-10",
+            "pontualidade": 5,
+            "qualidade": 4,
+            "comunicacao": 5
+          }
+        ],
+        "disponibilidade": {
+          "dias": [
+            "Segunda-feira",
+            "Terça-feira",
+            "Sexta-feira"
+          ],
+          "horarios": [
+            "14h-20h"
+          ]
+        },
+        "documentos_verificados": true,
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-21T10:00:00Z"
+      }
+    },
+    {
+      "tipo": "freelancer",
+      "id": "freelancer_004",
+      "senha": "123",
+      "perfil": {
+        "nome": "Pedro Henrique Gomes",
+        "data_nascimento": "1988-11-12",
+        "cpf": "555.666.777-88",
+        "email": "pedro.henrique@email.com",
+        "telefone": "+55 85 98888-7777",
+        "endereco": {
+          "cidade": "Fortaleza",
+          "estado": "CE",
+          "pais": "Brasil"
+        },
+        "foto_perfil_url": "https://exemplo.com/fotos/pedro.jpg",
+        "servicos_oferecidos": [
+          {
+            "id_servico": 5,
+            "nome_servico": "Montagem de Móveis",
+            "descricao": "Montagem de guarda-roupas, estantes, racks, mesas e muito mais.",
+            "categoria": "Montador de Móveis",
+            "preco_por_hora": 55,
+            "preco_por_projeto": 300,
+            "localizacao": "Fortaleza - CE",
+            "contato": "pedro.henrique@email.com"
+          }
+        ],
+        "avaliacoes_recebidas": [
+          {
+            "tipo_usuario": "cliente",
+            "nome_usuario": "Lucas Dias",
+            "comentario": "Montou o armário com perfeição.",
+            "data": "2025-06-15",
+            "pontualidade": 5,
+            "qualidade": 4,
+            "comunicacao": 4
+          }
+        ],
+        "disponibilidade": {
+          "dias": [
+            "Segunda-feira",
+            "Sábado",
+            "Domingo"
+          ],
+          "horarios": [
+            "10h-17h"
+          ]
+        },
+        "documentos_verificados": false,
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-22T16:45:00Z"
+      }
+    },
+    {
+      "id": "cliente_299",
+      "tipo": "cliente",
+      "email": "gmail@gmail.com",
+      "senha": "123",
+      "perfil": {
+        "nome": "Lucas Cardoso",
+        "data_nascimento": "2025-06-10",
+        "cpf": "1234321123",
+        "telefone": "12312432",
+        "termos_aceitos": true,
+        "data_cadastro": "2025-06-30T02:15:21.299Z",
+        "endereco": {
+          "rua": "Rua 123",
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "cep": "123543"
+        },
+        "preferencias_servico": [
+          "Eletricista"
+        ],
+        "metodo_pagamento": {
+          "numero_cartao": "2135 1235 1243",
+          "validade": "11/12",
+          "cvv": "123"
+        },
+        "historico_contratos": [],
+        "avaliacoes_realizadas": [],
+        "propostas_servico": [
+          {
+            "id": 1751338592335,
+            "servico": "Confecção de móvel",
+            "local": "São paulo-Sp",
+            "pagamento": "150",
+            "data": "2025-07-10",
+            "descricao": "Preciso da confecção de uma porta de madeira",
+            "categoria": "Marceneiro"
+          }
+        ]
+      }
+    }
+  ],
+  "agendamentos": [
+    {
+      "id": "1751261955589",
+      "id_cliente": "cliente_299",
+      "id_freelancer": "freelancer_003",
+      "id_servico": "4",
+      "data": "2025-06-02",
+      "horario": "14h-20h",
+      "descricao": "Cano",
+      "status": "cancelado"
+    },
+    {
+      "id": "1751262045485",
+      "id_cliente": "cliente_299",
+      "id_freelancer": "freelancer_003",
+      "id_servico": "4",
+      "data": "2025-06-02",
+      "horario": "14h-20h",
+      "descricao": "a",
+      "status": "concluido"
+    },
+    {
+      "id": "1751262175109",
+      "id_cliente": "cliente_299",
+      "id_freelancer": "freelancer_003",
+      "id_servico": "4",
+      "data": "2025-06-09",
+      "horario": "14h-20h",
+      "descricao": "a",
+      "status": "concluido"
+    },
+    {
+      "id": "1751262381868",
+      "id_cliente": null,
+      "id_freelancer": null,
+      "id_servico": 4,
+      "data": "2025-07-07",
+      "horario": "14h-20h",
+      "descricao": "Canos",
+      "status": "pendente"
+    },
+    {
+      "id": "1751292717864",
+      "id_cliente": "cliente_001",
+      "id_freelancer": "freelancer_002",
+      "id_servico": 0,
+      "data": "2025-07-12",
+      "horario": "Não definido",
+      "descricao": "Necessito de um profissional para a confecção de um móvel de madeira para minha cozinha",
+      "status": "pendente"
+    },
+    {
+      "id": "1751293231959",
+      "id_cliente": "cliente_299",
+      "id_freelancer": "freelancer_002",
+      "id_servico": 0,
+      "data": "2025-07-02",
+      "horario": "Não definido",
+      "descricao": "Preciso tampar um buraco da minha casa",
+      "status": "pendente"
+    },
+    {
+      "id": 1751338665879,
+      "id_cliente": null,
+      "id_freelancer": null,
+      "id_servico": 4,
+      "data": "2025-07-07",
+      "horario": "14h-20h",
+      "descricao": "Preciso arrumar um chuveiro pingando",
+      "status": "pendente"
+    }
+  ]
+}

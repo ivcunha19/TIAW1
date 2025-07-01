@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #004679;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  color: #004080;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 98%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 10px;
+  width: 98%;
+}
+
+.row>div {
+  flex: 1;
+  min-width: 0;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.salvar {
+  background-color: #007bff;
+}
+
+.editar {
+  background-color: #6c757d;
+}
+
+.excluir {
+  background-color: #dc3545;
+}
+
+.adicionar {
+  background-color: #28a745;
+  margin: 10px 0;
+  flex: none;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+
+.servico-item,
+.portfolio-item,
+.certificacao-item,
+.preferencia-item {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+}
+
+
+.dias-semana {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.dias-semana label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  font-weight: normal;
+}
+
+.dias-semana input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+label[for="documentosVerificados"] {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}

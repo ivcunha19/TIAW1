@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comparar Freelancers</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styleHenr.css">
+  <style>
+    input[type="text"], button {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    .checkbox-container {
+      margin: 15px 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .ficha {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      width: 45%;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    canvas {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Comparar Freelancers</h1>
+
+  <input type="text" id="nome1" placeholder="Nome do Freelancer 1">
+  <input type="text" id="nome2" placeholder="Nome do Freelancer 2">
+  <button onclick="compararFreelancers()">Comparar</button>
+
+  <div class="checkbox-container">
+    <label><input type="checkbox" id="checkPreco" checked> Preço por hora</label>
+    <label><input type="checkbox" id="checkAvaliacao" checked> Avaliação</label>
+  </div>
+
+  <div class="container">
+    <div class="ficha" id="info1"></div>
+    <div class="ficha" id="info2"></div>
+  </div>
+
+  <canvas id="grafico" style="max-height: 450px;"></canvas>
+
+  <div id="resultadoBox" class="resultado-box" style="display: none;">
+    <span class="emoji">🏆</span>
+    <span id="resultadoComparacao" class="mensagem"></span>
+  </div>
+
+  <script src="scriptCompFreelancer.js"></script>
+</body>
+</html>

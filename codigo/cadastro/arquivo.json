@@ -1,0 +1,131 @@
+{
+  "usuarios": [
+    {
+      "tipo": "freelancer",
+      "id": "freelancer_001",
+      "perfil": {
+        "nome": "Mariana Silva",
+        "data_nascimento": "1992-08-15",
+        "cpf": "123.456.789-00",
+        "email": "mariana.silva@email.com",
+        "telefone": "+55 11 91234-5678",
+        "endereco": {
+          "cidade": "São Paulo",
+          "estado": "SP",
+          "pais": "Brasil"
+        },
+        "foto_perfil_url": "https://exemplo.com/fotos/mariana.jpg",
+        "servicos_oferecidos": [
+          {
+            "id_servico": 1,
+            "nome_servico": "Desenvolvimento Front-End",
+            "preco_por_hora": 80,
+            "preco_por_projeto": 1500
+          }
+        ],
+        "portfolio": [
+          {
+            "id_projeto": 1,
+            "descricao_projeto": "Site institucional para empresa de tecnologia",
+            "imagens_projeto": [
+              "https://exemplo.com/projetos/site1-1.png",
+              "https://exemplo.com/projetos/site1-2.png"
+            ]
+          }
+        ],
+        "certificacoes": [
+          {
+            "id_certificacao": 1,
+            "nome_certificacao": "Vue.js Avançado",
+            "instituicao": "Alura",
+            "data_obtencao": "2023-11-20"
+          }
+        ],
+        "url_video_introducao": "https://youtube.com/watch?v=exemplo",
+        "avaliacoes_recebidas": [
+          {
+            "id_avaliacao": 1,
+            "tipo_usuario": "cliente",
+            "nome_usuario": "Carlos Eduardo Rocha",
+            "nota": 5,
+            "comentario": "Trabalho impecável e dentro do prazo!"
+          }
+        ],
+        "disponibilidade": {
+          "dias": ["Segunda-feira", "Terça-feira", "Quinta-feira"],
+          "horarios": ["9h-17h", "19h-21h"]
+        },
+        "uploads_portfolio": [
+          {
+            "tipo_arquivo": "imagem",
+            "url_arquivo": "https://exemplo.com/uploads/design.png"
+          },
+          {
+            "tipo_arquivo": "video",
+            "url_arquivo": "https://exemplo.com/uploads/apresentacao.mp4"
+          }
+        ],
+        "conta_bancaria": {
+          "banco": "Nubank",
+          "agencia": "0001",
+          "conta": "123456-7",
+          "tipo": "Pessoa Física",
+          "pix": "mariana.silva@email.com"
+        },
+        "documentos_verificados": true,
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-18T14:00:00Z"
+      }
+    },
+    {
+      "tipo": "cliente",
+      "id": "cliente_001",
+      "perfil": {
+        "nome": "João da Silva",
+        "data_nascimento": "1985-03-22",
+        "cpf": "987.654.321-00",
+        "email": "joao.silva@email.com",
+        "telefone": "+55 31 99888-1122",
+        "endereco": {
+          "rua": "Rua das Flores, 123",
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "cep": "30100-000"
+        },
+        "preferencias_servico": [
+          "Eletricista",
+          "Encanador",
+          "Montador de Móveis"
+        ],
+        "metodo_pagamento": {
+          "numero_cartao": "1234 5678 9012 3456",
+          "validade": "12/27",
+          "cvv": "123"
+        },
+        "historico_contratos": [
+          {
+            "id_contrato": 1,
+            "servico": "Instalação de tomadas",
+            "nome_freelancer": "Carlos Ferreira",
+            "data": "2025-03-10",
+            "avaliacao": {
+              "nota": 5,
+              "comentario": "Serviço excelente e rápido!"
+            }
+          }
+        ],
+        "avaliacoes_realizadas": [
+          {
+            "id_avaliacao": 1,
+            "tipo_usuario": "freelancer",
+            "nome_usuario": "Carlos Ferreira",
+            "nota": 5,
+            "comentario": "Profissional pontual e competente."
+          }
+        ],
+        "termos_aceitos": true,
+        "data_cadastro": "2025-05-18T15:30:00Z"
+      }
+    }
+  ]
+}

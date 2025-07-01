@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Avaliações</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="../pagina-inicial/index-paginaInicial.html"><img src="logo.jpeg" alt="Logo House Service" class="logo"></a>
+      
+    </div>
+    <h3><a href="../pagina-inicial/index-paginaInicial.html"></a>Inicio</h3>
+  </nav>
+</header>
+
+  <div class="container">
+    <h2>Avalie o cliente</h2>
+    <form id="avaliacaoForm">
+      <div class="avaliacao-grupo">
+        <div class="estrelas" data-item="qualidade">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+      </div>
+      <input type="hidden" id="qualidade" />
+
+      <!-- Caixa de comentário -->
+      <div class="comentario-grupo">
+        <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escreva seu comentário aqui..."></textarea>
+      </div>
+
+      <button type="submit" class="botaoazul">Enviar</button>
+      <button type="button" id="limparBtn" class="botaoazul">Limpar</button>
+    </form>
+  </div>
+
+  <!-- Modal -->
+  <div id="mediaModal" class="modal">
+    <div class="modal-content">
+      <h3>Média das Avaliações</h3>
+      <div id="estrelasModal" style="font-size: 24px;"></div>
+      <div class="rating-bar">
+        <div class="fill" id="modal-fill-media"></div>
+      </div>
+
+      <div class="avaliacoes-modal">
+        <h4>Avaliações deste usuário</h4>
+        <div id="avaliacoes-lista-modal"></div>
+      </div>
+
+      <button class="close-btn" id="fecharModal">Fechar</button>
+    </div>
+  </div>
+
+  <script src="cliente.js"></script>
+</body>
+</html>

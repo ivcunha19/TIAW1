@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Serviços - House Service</title>
+  <link rel="stylesheet" href="Filtro.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Buscar Serviços</h1>
+    <div class="filters">
+      <input type="text" id="campoBusca" placeholder="Buscar por nome, serviço ou descrição..." />
+
+      <select id="localizacaoFiltro">
+        <option value="">Todas Localizações</option>
+        <option value="São Paulo, SP">São Paulo, SP</option>
+        <option value="Rio de Janeiro, RJ">Rio de Janeiro, RJ</option>
+      </select>
+
+      <select id="avaliacaoFiltro">
+        <option value="0">Qualquer Avaliação</option>
+        <option value="4">Pelo menos 4 estrelas</option>
+        <option value="4.5">Pelo menos 4.5 estrelas</option>
+        <option value="5">Somente 5 estrelas</option>
+      </select>
+
+      <label>
+        <input type="checkbox" id="favoritosFiltro" />
+        Mostrar apenas favoritos
+      </label>
+
+      <input type="number" id="precoMaxFiltro" placeholder="Preço máximo R$" />
+
+      <button onclick="aplicarFiltros()">Filtrar</button>
+
+      <a href="../comparar/compararFreelancer.html">Comparar Freelancers</a>
+    </div>
+  </header>
+  <main id="freelancerGrid" class="grid"></main>
+  <script src="Filtro.js"></script>
+</body>
+
+</html>

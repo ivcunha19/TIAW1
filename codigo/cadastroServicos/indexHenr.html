@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Serviços</title>
+  <link rel="stylesheet" href="styleHenr.css">
+</head>
+<body>
+  <h1>Cadastro de Serviços</h1>
+  <p id="modoEdicao" class="modo-edicao" hidden></p>
+
+  <form id="formServico">
+    <input type="text" id="nomeServico" placeholder="Titulo do serviço" required><br>
+    <input type="text" id="descricao" placeholder="Descrição do serviço" required><br>
+    <input type="text" id="categoria" placeholder="Categoria do serviço" required><br>
+    <input type="number" id="valor" placeholder="Valor (ex: 1500)" required min="0" step="0.01"><br>
+    <input type="text" id="contato" placeholder="Contato (ex: e-mail ou telefone)" pattern="^((\+?\d{1,3})?[-.\s]?\(?\d{2,3}\)?[-.\s]?\d{4,5}[-.\s]?\d{4}|[\w\.-]+@[\w\.-]+\.\w{2,4}|@[\w\.]{2,30})$" title="Insira um telefone válido, e-mail ou @usuário" required><br>
+    <input type="text" id="localizacao" placeholder="Endereço do serviço" required><br>
+    <button type="submit" id="btnSubmit">Cadastrar</button>
+  </form>
+
+  <script src="scriptHenr.js"></script>
+</body>
+</html>

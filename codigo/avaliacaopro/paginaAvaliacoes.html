@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Service</title>
+    <script src="avaliacoes.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <header>
+  <nav class="navbar">
+    <div class="logo-container">
+    <a href="../pagina-inicial/index-paginaInicial.html"><img src="logo.jpeg" alt="Logo House Service" class="logo"></a>
+      
+    </div>
+  </nav>
+</header>
+    <main>
+        <section class="title">
+            <h2>Avaliações</h2>
+        </section>
+        <section class="info-profissional">
+            <!-- Foto e Nome lado a lado -->
+            <div class="foto-e-nome">
+                <div class="foto-profissional">
+                    <img id="foto-profissional" src="img/capi.jpg" alt="Foto do Profissional">
+                </div>
+                <div id="avaliacao-nome"> 
+                    <div class="dados-profissional">
+                        <h2 id="nome-profissional">Nome do Profissional</h2>
+                    </div>
+
+                    <!-- Barra de Avaliação Média -->
+                    <div class="media-avaliacao">
+                        <h3>Média das Avaliações: <span id="media-estrelas">0</span> estrelas</h3>
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-bar">
+                            <div class="fill" id="fill-media"></div>
+                        </div>
+                    </div>
+
+                    <!-- Critérios de Avaliação -->
+                    <div class="criterios">
+                        <h3>Critérios</h3>
+                        <div class="criterio">
+                            <span>Pontualidade:</span>
+                            <div class="rating-bar">
+                                <div class="fill" id="fill-pontualidade"></div>
+                            </div>
+                        </div>
+                        <div class="criterio">
+                            <span>Qualidade:</span>
+                            <div class="rating-bar">
+                                <div class="fill" id="fill-qualidade"></div>
+                            </div>
+                        </div>
+                        <div class="criterio">
+                            <span>Comunicação:</span>
+                            <div class="rating-bar">
+                                <div class="fill" id="fill-comunicacao"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exibindo Avaliações -->
+            <div class="avaliacoes">
+                <h3>Avaliações dos Usuários</h3>
+                <div id="avaliacoes-lista"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

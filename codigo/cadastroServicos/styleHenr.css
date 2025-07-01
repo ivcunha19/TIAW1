@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  max-width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  max-width: 99%;
+  height: 20px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #095d96;
+}
+
+.modo-edicao {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+table td button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+table td button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+table td button:first-child:hover {
+  background-color: #095d96;
+}
+
+table td button:last-child:hover {
+  background-color: #a71120;
+}
+
+.resultado-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-box .emoji {
+  font-size: 24px;
+}
+
+.resultado-box .mensagem {
+  flex: 1;
+}

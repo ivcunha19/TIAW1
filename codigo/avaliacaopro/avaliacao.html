@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Avaliações</title> 
+  <link rel="stylesheet" href="style.css" />  
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo-container">
+       <a href="../pagina-inicial/index-paginaInicial.html"><img src="logo.jpeg" alt="Logo House Service" class="logo"></a>
+      
+    </div>
+  </nav>
+</header>
+
+    <div class="container">
+      <h2>Avalie nosso serviço</h2>
+      <form id="avaliacaoForm">
+        <textarea id="comentario" placeholder="Escreva um comentário..."></textarea>
+        <div class="avaliacao-grupo">
+        <label>Pontualidade:</label>
+        <div class="estrelas" data-item="pontualidade">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+        </div>
+        <div class="avaliacao-grupo">
+        <label>Qualidade:</label>
+        <div class="estrelas" data-item="qualidade">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+        </div>
+        <div class="avaliacao-grupo">
+          <label>Comunicação:</label>
+          <div class="estrelas" data-item="comunicacao">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+        </div>
+        <input type="hidden" id="pontualidade" />
+        <input type="hidden" id="qualidade" />
+        <input type="hidden" id="comunicacao" />
+        <button type="submit" class="botaoazul">Enviar</button>
+        <button type="button" id="limparBtn" class="botaoazul">Limpar</button>
+      </form>
+    </div>
+    <script src="pro.js"></script>
+</body>
+</html>

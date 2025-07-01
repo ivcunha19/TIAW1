@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>House Service Freelancer</title>
+  <link rel="stylesheet" href="style-paginaInicial.css" />
+</head>
+<body>
+  <header>
+    <div class="topo">
+     <img src="Logo.jpeg" alt="Logo House Service Freelancer" class="logo" />
+      <button id="botaoLogin" class="btn-login" onclick="window.location.href='../Login/indexLogin.html'">Login</button>
+    </div>
+    <div class="banner">
+      <div class="texto">
+        <h1>Encontre profissionais confiáveis para cuidar da sua casa</h1>
+        <p>Cadastre-se agora e encontre serviços para deixar o seu lar ainda melhor</p>
+        <div class="botoes">
+         <button class="btn-azul" onclick="window.location.href='../cadastro/indexCadastro.html'">Cadastrar-se</button>
+          <button class="btn-escuro" onclick="window.location.href='../filtros/Filtros.html'">Encontre um profissional</button>
+          <button class="btn-escuro" onclick="window.location.href='../buscarPropostas/buscarPropostas.html'">Encontre uma proposta</button>
+        </div>
+      </div>
+      <img src="ilustração.png" alt="Profissional" class="ilustracao" />
+    </div>
+  </header>
+
+  <main class="vantagens">
+    <h2>Vantagens da plataforma</h2>
+    <div class="beneficios">
+      <div class="item">
+        <img src="diversidade.png" alt="Diversidade" />
+        <h3>Diversidade</h3>
+        <p>Encontre profissionais qualificados em diversas áreas</p>
+      </div>
+      <div class="item">
+        <img src="agilidade.png" alt="Agilidade" />
+        <h3>Agilidade no atendimento</h3>
+        <p>Serviços rápidos e sem complicação</p>
+      </div>
+      <div class="item">
+        <img src="segurança.png" alt="Segurança" />
+        <h3>Segurança</h3>
+        <p>Profissionais verificados e pagamento protegido</p>
+      </div>
+    </div>
+    <h2>Pronto para encontrar o serviço que você precisa?</h2>
+    <div class="estrelas">
+      <img src="estrela.png" alt="Estrela" />
+      <img src="estrela.png" alt="Estrela" />
+      <img src="estrela.png" alt="Estrela" />
+    </div>
+  </main>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const usuario = JSON.parse(localStorage.getItem("user"));
+    const container = document.querySelector(".topo");
+    const botoesDiv = document.querySelector(".botoes");
+    const botaoLogin = document.getElementById("botaoLogin");
+    const botaoCadastrar = botoesDiv.querySelector(".btn-azul");
+
+    if (usuario) {
+      if (botaoLogin) botaoLogin.remove();
+
+      if (botaoCadastrar) botaoCadastrar.remove();
+      const botaoPerfil = document.createElement("button");
+      botaoPerfil.textContent = "Meu Perfil";
+      botaoPerfil.className = "btn-login";
+      botaoPerfil.onclick = () => {
+        const tipoUsuario = usuario.tipo || usuario.tipoUsuario;
+        if (tipoUsuario === 'cliente') {
+          window.location.href = `../perfil/perfilCliente.html?id=${usuario.id}`;
+        } else {
+          window.location.href = `../perfil/perfilPro.html?id=${usuario.id}`;
+        }
+      };
+
+      const botaoLogout = document.createElement("button");
+      botaoLogout.textContent = "Logout";
+      botaoLogout.className = "btn-login";
+      botaoLogout.onclick = () => {
+        localStorage.removeItem("user");
+        window.location.reload();
+      };
+
+      container.appendChild(botaoPerfil);
+      container.appendChild(botaoLogout);
+
+      if (usuario.tipo === "freelancer") {
+        const botaoCadastroServico = document.createElement("button");
+        botaoCadastroServico.textContent = "Cadastrar Serviço";
+        botaoCadastroServico.className = "btn-escuro";
+        botaoCadastroServico.onclick = () => {
+          window.location.href = "../cadastroServicos/indexHenr.html";
+        };
+        botoesDiv.insertBefore(botaoCadastroServico, botoesDiv.firstChild);
+      }
+
+      if (usuario.tipo === "cliente") {
+        const botaoCadastrarAgendamento = document.createElement("button");
+        botaoCadastrarAgendamento.textContent = "Cadastrar Agendamento";
+        botaoCadastrarAgendamento.className = "btn-escuro";
+        botaoCadastrarAgendamento.onclick = () => {
+          window.location.href = "../cadastroPropostas/Propostas.html";
+        };
+        botoesDiv.insertBefore(botaoCadastrarAgendamento, botoesDiv.firstChild);
+      }
+    }
+  });
+</script>
+
+
+
+</body>
+</html>

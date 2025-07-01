@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento de Serviços</title>
+  <link rel="stylesheet" href="aceitarServicos.css">
+</head>
+<body>
+
+  <h2>Agendar Serviço</h2>
+  <form id="formAgendamento">
+    <label for="freelancer">Freelancer:</label>
+    <select id="freelancer" name="freelancer" required></select>
+
+    <label for="servico">Serviço:</label>
+    <select id="servico" name="servico" required></select>
+
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data" required>
+
+    <label for="horario">Horário:</label>
+    <select id="horario" name="horario" required></select>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao" required></textarea>
+
+    <button type="submit">Agendar</button>
+    <div class="agendamentos">
+    <button id="btnVerAgendamentos" type="button">Ver Meus Agendamentos</button>
+    </div>
+
+  </form>
+  <div id="logo"><a href="../pagina-inicial/index-paginaInicial.html"><img src="../perfil/logo.jpeg" alt="Logo do Site"></a></div>
+  <script src="aceitarServicos.js"></script>
+</body>
+</html>

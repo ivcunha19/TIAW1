@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Propostas de Serviços</title>
+  <link rel="stylesheet" href="Propostas.css"/>
+</head>
+<body>
+  <header>
+    <h1>House Service</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Publicar Proposta de Trabalho</h2>
+      <form id="jobForm">
+        <input type="text" id="servico" placeholder="Serviço requisitado" required />
+        <input type="text" id="local" placeholder="Local" required />
+        <input type="text" id="categoria" placeholder="Categoria" required />
+        <input type="number" id="pagamento" placeholder="Pagamento (R$)" required />
+        <input type="date" id="data" required />
+        <textarea id="descricao" placeholder="Descrição breve" required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Propostas Publicadas</h2>
+      <div id="jobList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; HouseService</p>
+  </footer>
+  <script src="Propostas.js"></script>
+</body>
+</html>
