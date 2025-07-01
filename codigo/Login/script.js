@@ -5,7 +5,7 @@ const email = document.getElementById("email").value;
 const senha = document.getElementById("senha").value;
 
   try {
-    const response = await fetch(`http://localhost:3000/usuarios`);
+    const response = await fetch(`/usuarios`);
     const usuarios = await response.json();
 
     const user = usuarios.find(u =>
