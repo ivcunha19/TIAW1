@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env PORT=$PORT json-server --watch db.json --static . --port $PORT"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
