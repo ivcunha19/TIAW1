@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0387100-houseservice#readme",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.4"
   }
 }
